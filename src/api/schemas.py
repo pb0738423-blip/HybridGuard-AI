@@ -57,6 +57,9 @@ class PredictResponse(BaseModel):
     top_fake_words: List[WordAttribution] = Field(default_factory=list)
     top_real_words: List[WordAttribution] = Field(default_factory=list)
     explanation_scope: str = ""
+    selected_model: str = "hybrid_stacking"
+    input_word_count: int = 0
+    input_warning: str = ""
 
 
 # ===================== FACT CHECKING SCHEMAS =====================

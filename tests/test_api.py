@@ -125,3 +125,35 @@ def test_speech_session_flow(client):
     assert status_data["is_active"] is True
     assert status_data["transcript_segment_count"] >= 1
 
+
+
+
+def test_headline_only_prediction_requires_review(client):
+    payload = {
+        "text": "Karnataka SIR: 64.5 lakh voters potentially missing in rolls, majority of them young",
+        "explain": False,
+    }
+    response = client.post("/api/predict", json=payload)
+    assert response.status_code == 200
+    data = response.json()
+    assert data["selected_model"] == "linear_svm"
+    assert data["input_word_count"] < 80
+    assert data["needs_review"] is True
+    assert "trained on full news articles" in data["input_warning"]
+
+
+def test_full_article_prediction_includes_scope_warning(client):
+    article = (
+        "The Karnataka electoral roll revision process has prompted questions about "
+        "the number of eligible voters who may not appear in the updated rolls. "
+        "Officials and researchers have discussed the methodology used to estimate "
+        "the eligible population. The estimate depends on population projections "
+        "and elector-to-population ratios, so it should not be interpreted as a "
+        "confirmed count of deleted voters. Independent reporting has examined "
+        "the figures and explained the limitations of the estimate. "
+    ) * 5
+    response = client.post("/api/predict", json={"text": article, "explain": False})
+    assert response.status_code == 200
+    data = response.json()
+    assert data["input_word_count"] >= 80
+    assert "not proof of factual accuracy" in data["input_warning"]

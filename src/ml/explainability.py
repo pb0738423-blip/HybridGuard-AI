@@ -95,8 +95,10 @@ class ModelExplainer:
         lr_model: Any,
         svm_model: Any,
         meta_weights: Optional[Dict[str, float]] = None,
+        selected_model: str = "hybrid_stacking",
     ):
         self.feature_names = feature_names
+        self.selected_model = selected_model
         self.lr_coef = lr_model.coef_[0] if hasattr(lr_model, "coef_") else None
         self.meta_weights = meta_weights or {"logistic_regression": 1.0}
 
@@ -113,7 +115,13 @@ class ModelExplainer:
         self.composite_coef = self._build_composite_coef()
 
     def _build_composite_coef(self) -> np.ndarray:
-        """Weight the linear coefficients by their respective meta-learner weights."""
+        """Return coefficients matching the model selected for prediction."""
+        if self.selected_model == "linear_svm":
+            if self.svm_coef is not None:
+                return self.svm_coef
+            return np.zeros(len(self.feature_names))
+        if self.selected_model == "logistic_regression":
+            return self.lr_coef if self.lr_coef is not None else np.zeros(len(self.feature_names))
         if self.lr_coef is None:
             return np.zeros(len(self.feature_names))
 

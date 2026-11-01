@@ -77,7 +77,7 @@ export default function NewsDetection() {
           News Credibility Classifier
         </h1>
         <p className="text-xs sm:text-sm text-slate-400 mt-1">
-          Detects sensationalism, manipulative rhetoric, and stylistic deception using calibrated ML models.
+          Estimates writing-pattern similarity to the training dataset. This is not independent verification of factual claims.
         </p>
       </div>
 
@@ -186,12 +186,22 @@ export default function NewsDetection() {
               </div>
 
               <h2 className="text-xl sm:text-2xl font-bold text-white">
-                {result.needs_review
-                  ? 'Marginal Confidence: Ambiguous Stylistic Features'
+                {result.input_word_count < 80
+                  ? 'Insufficient article context — review required'
+                  : result.needs_review
+                  ? 'Model result requires human review'
                   : result.prediction === 'Fake'
-                  ? 'High Probability of Sensationalism & Deception'
-                  : 'Consistent with Verified Journalistic Standards'}
+                  ? 'Text pattern classified as fake-like'
+                  : 'Text pattern classified as real-like'}
               </h2>
+              <p className="text-xs text-slate-400">
+                Selected model: {result.selected_model || 'hybrid_stacking'} · {result.input_word_count || wordCount} words analyzed
+              </p>
+              {result.input_warning && (
+                <div className="rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-xs leading-relaxed text-amber-200">
+                  {result.input_warning}
+                </div>
+              )}
 
               {/* Calibrated Probability Bar */}
               <div className="space-y-1 pt-1">
@@ -218,7 +228,7 @@ export default function NewsDetection() {
                 prediction={result.prediction}
                 uncertainty={result.uncertainty_score}
                 needsReview={result.needs_review}
-                label="Calibrated Score"
+                label="Model score (not fact-check)"
               />
             </div>
           </div>
