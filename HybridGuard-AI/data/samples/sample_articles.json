@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Trump, Clinton win big in Arizona, but Cruz, Sanders show fight",
+    "text": "WASHINGTON (Reuters) - U.S. Republican front-runner Donald Trump swept to victory in Arizona on Tuesday but rival Ted Cruz showed some fight with a win in Utah that gave hope to establishment Republicans who fear Trump would lead the party to ruin in the presidential election. On the Democratic side, favorite Hillary Clinton routed challenger Bernie Sanders in Arizona to stretch her advantage in the race for her party\u2019s presidential nomination. Sanders, however, won contests in Utah and Idaho to bolster his case that he still has a chance despite Clinton\u2019s big lead. The nominating battles in Arizona and Utah, plus the Democratic contest in Idaho, were overshadowed by attacks in Brussels in which at least 30 people were killed and raised security concerns among U.S. voters. Trump helped himself in Arizona with a hardline anti-immigration message and tough talk on Islamic militants to easily defeat Cruz, a U.S. senator from Texas, and Ohio Governor John Kasich. Trump had the backing in Arizona of Maricopa County Sheriff Joe Arpaio, one of the most prominent supporters of a crackdown on illegal immigrants. The win furthered Trump\u2019s argument that he will eventually win the Republican p",
+    "label": 0,
+    "ground_truth": "Real",
+    "char_length": 4313
+  },
+  {
+    "title": "Islamic State releases video it says shows two Russians captured in Syria",
+    "text": "CAIRO (Reuters) - Islamic State released a video on Tuesday that it said showed two Russian soldiers captured by its fighters in the Syrian city of Deir al-Zor, where Russia has been backing the Syrian military against militants.  But the Russian Defence Ministry denied their soldiers had been captured, Interfax news agency reported. The defense ministry, and the foreign ministry, did not immediately respond to requests for comment submitted by Reuters. In the 42-second video, released on the group s AMAQ news agency, two men appeared briefly in a room wearing gray tunics. One, with a beard, appeared to be in handcuffs. The other seemed to have bruises on his face. Reuters could not immediately verify the video. The bearded man spoke in Russian, the other remained silent, with Arabic subtitles in the video. It was dated Oct. 3, though there was no other evidence when the video was made. The bearded man, speaking to the camera, gave his name, his date of birth, and his home village in southern Russia. He then said:  I was taken prisoner during a counter-offensive by Islamic State.  He said he was taken prisoner with a second man, whose name, date of birth and home district he also g",
+    "label": 0,
+    "ground_truth": "Real",
+    "char_length": 1929
+  },
+  {
+    "title": "Arm found near Copenhagen could relate to submarine case: Danish police",
+    "text": "COPENHAGEN (Reuters) - An unidentified arm found by divers in the water near Copenhagen could belong to Swedish journalist Kim Wall who died after taking a submarine ride with the vessel s Danish inventor in August, Danish police said on Tuesday. The arm was found near the route that had been investigated in connection with the submarine case, the police said in a statement. The limb would be examined by coroners on Wednesday.   We have not yet determined if this is a right or left arm or who the arm belongs to. But we are working from a perspective that it stems from the submarine case,  police spokesman Jens Moller Jensen said.  Wall, a freelance journalist who was researching a story on submarine owner Peter Madsen, went missing after he took her out to sea in the 17-metre (56-foot) submarine in August. On Aug. 23, police identified a headless female torso that washed ashore in Copenhagen as that of Wall. In October, police said they had recovered her head and legs. Madsen admitted to dismembering Wall on board his submarine and dumping her body parts in the sea, but he still denies murdering her and a charge of sexual assault without intercourse. The trial has been set to take ",
+    "label": 0,
+    "ground_truth": "Real",
+    "char_length": 1304
+  },
+  {
+    "title": "Republican presidential race erupts into four-way battle",
+    "text": "CHARLESTON, S.C./SUMTER, S.C. (Reuters) - The Republican race for the party\u2019s 2016 presidential nomination erupted into a four-candidate crossfire on Wednesday over who has the proper experience and is the most conservative, days before South Carolina voters put their stamp on the campaign. In TV interviews and campaign events, front-runner Donald Trump threatened to sue Senator Ted Cruz of Texas over a negative TV ad, while Senator Marco Rubio of Florida accused Cruz of lying about his record, and former Florida Governor Jeb Bush questioned Rubio\u2019s experience to serve as president. Amid the squabbling, South Carolina Governor Nikki Haley endorsed Rubio as the Republicans\u2019 best hope for winning the White House, a boost to Rubio and a blow to Bush, who had lobbied hard for her to pick him. The endorsement gave Rubio, 44, a valuable ally to try to sway voters ahead of Saturday\u2019s South Carolina Republican primary, the third contest after Iowa and New Hampshire to pick a party nominee for the Nov. 8 election to succeed Democratic President Barack Obama. Bush had a tough day, learning of Haley\u2019s endorsement right before a town hall meeting in Summerville, South Carolina, where four memb",
+    "label": 0,
+    "ground_truth": "Real",
+    "char_length": 4941
+  },
+  {
+    "title": "Five detained over wired explosives found in posh Paris neighborhood",
+    "text": "PARIS (Reuters) - French counter-terrorism investigators questioned five people on Tuesday after police over the weekend found what appeared to be a ready-to-detonate bomb at an apartment building in one of Paris s poshest neighborhoods. Interior Minister Gerard Collomb said one of those arrested was on an intelligence services list of  radicalized  persons - a list that includes the names of potential Islamist militants.  We are still in a state of war,  Collomb, speaking after a Sunday attack in which a man stabbed and killed two women outside the train station in Marseille, told France Inter radio. Judicial sources said the explosive device included two gas canisters inside the building in the affluent 16th district of western Paris and two outside, some of them doused with petrol and wired to connect to a mobile phone. More than 230 people have been killed in attacks by Islamist militants in France over the past three years. The Islamic State militant group, whose bases in Syria and Iraq are being bombed by French war planes, has urged followers to attack France. Most of those killed died when Islamist gunmen and suicide bombers targeted Paris in 2015, and when a man drove a la",
+    "label": 0,
+    "ground_truth": "Real",
+    "char_length": 2555
+  },
+  {
+    "title": "US Media Silence as Pentagon Deploys Rangers Armoured Regiment on the Ground in Syria",
+    "text": "US Army M1126 Stryker armoured vehicles rolled into Syria this week (Source: Twitter)21st Century Wire says Yesterday reports emerged of a US heavy armoured convoy heeding through northern Syria, heading towards a forward position near the flashpoint city of Manbij, near the ISIS stronghold of Raqqa. Not surprisingly, this news   which would normally be strewn across all headlines and TV news leader boards   has been completely blacked-out by the US media, aside from some website mentions.Naturally, Americans have to go to RT to get news about what the US military is doing in far-flung destinations. Here is a video report by RT s Ruptly News Agency which shows the US servicemen leading a convoy of Stryker armoured vehicles in the Syrian countryside: According to military blog SOFREP, call signs indicate that this US battalion is based out of Fort Benning, Georgia.  By looking at the call sign tag on the back of the Stryker, it is evident that this is 3rd Ranger Battalion out of Fort Benning, Georgia, which has been confirmed via other sources. This clearly indicates that the Trump Administration is in the process of actively building up its military presence in Syria. To what degre",
+    "label": 1,
+    "ground_truth": "Fake",
+    "char_length": 1918
+  },
+  {
+    "title": "Electoral Map Is Changing As Deep Red Arizona And Georgia Go For Clinton",
+    "text": "The electoral map is being redrawn in Hillary Clinton s favor as Donald Trump plunges into near total self-destruction.While the American people continue to wake up to what Trump is   a loud, vile, jackass   the more they flock to Hillary Clinton, and the evidence is striking when taking into consideration two states where Republicans have dominated for decades, Arizona and Georgia.Georgia hasn t voted Democrat since 1980 (when Jimmy Carter ran against Ronald Reagan) and Arizona hasn t voted Democrat since 1996 (when Bill Clinton trounced Bob Dole).So for over thirty years these states have not been friendly to Democrats. But thanks to Donald Trump, they could come back around.A recent poll from OH Predictions based out of Arizona has Clinton beating Trump by three points, 45-42, the second poll from the same nonpartisan organization to show Clinton ahead of the blowhard billionaire. When factoring in the two polls from OH, with others showing a close competition, RealClearPolitics has the two evenly tied in their average for winning. In 2012, Romney won Arizona by 9 points.And how is it that Clinton could be beating Trump in Arpaio-Brewer county? His feud with the Khan family.Acro",
+    "label": 1,
+    "ground_truth": "Fake",
+    "char_length": 2742
+  },
+  {
+    "title": "",
+    "text": "People have made up their minds on president.\nI\u2019ve served as an elected District Attorney in Conservative Texas. Every DA is on a limited budget. We have to make choices. I believe in strict punishment for violent offenders and burglars. I rarely gave probation. Unfortunately we had to deal with all these annoying pot cases. Even when pot users got probation the understaffed probation officers had to make sure they were in by 10PM \u2013 I\u2019d rather they checked on sex offenders.]\nRevenues are another reason to legalize. The Washington Post reports for 2015 Colorado gained 18,000 pot-related jobs and $2.4 billion in revenue. 2016 will be much better. Use among teens has not increased both according to surveys from the Denver Post and Federal Government.\nIt\u2019s best to vote \u201cYes\u201d.",
+    "label": 1,
+    "ground_truth": "Fake",
+    "char_length": 782
+  },
+  {
+    "title": "The White House Just Confessed The REAL Reason For Syria Attack; It Is DISGUSTING (DETAILS)",
+    "text": "While many have been baffled and upset by Donald Trump s reckless decision to attack Syria (without Congressional approval), the inner details of what drove Trump to make such a decision are even worse.Senior White House officials have just confessed that this attack against Syria was nothing more than a publicity stunt for Trump, to feed his out of control ego. According to those officials, the poorly planned missile strike (which ultimately failed) isn t even part of a broader strategy or a step in a larger plan to remove Assad. It was absolutely meaningless, and its only purpose was to make Trump seem like a strong leader.CNN s Jim Acosta reported:While it s not surprising that Trump has no strategy for Syria (let s face it, he has zero strategy for anything he does), it s terrifying to actually see it play out before our eyes as an incompetent president puts America in grave danger.Basically, Trump used the U.S. military to make it LOOK like he was taking some sort of action on Syria, when really the exact opposite is true. There is no plan, and there likely will never be one. What Trump put on last night was merely a performance   and a damaging one. Already, U.S.-Russia relat",
+    "label": 1,
+    "ground_truth": "Fake",
+    "char_length": 1894
+  },
+  {
+    "title": "THE ENTIRE CLINTON FAMILY COULD GO TO JAIL: HUGE SECRET REVEALED ABOUT THE CLINTON FOUNDATION - USAPoliticsNow",
+    "text": "THE ENTIRE CLINTON FAMILY COULD GO TO JAIL: HUGE SECRET REVEALED ABOUT THE CLINTON FOUNDATION \n\u201cBasically what IRS just revealed is that Clinton Foundation is one huge Ponzi Scheme!!! \nThis is insane! Practically not just Hillary, but whole Clinton family is going to jail! \nJust 5.7 percent of the Clinton Foundation\u2019s massive 2014 budget actually went to charitable grants, according to the tax-exempt organization\u2019s IRS filings. The rest went to salaries and employee benefits, fundraising and \u201cother expenses.\u201d The Clinton Foundation spent a hair under $91.3 million in 2014, the organization\u2019s IRS filings show. But less than $5.2 million of that went to charitable grants. \nThat number pales in comparison to the $34.8 million the foundation spent on salaries, compensation and employee benefits. Another $50.4 million was marked as \u201cother expenses,\u201d while the remaining almost $851K was marked as \u201cprofessional fundraising expenses.\u201d \nDespite taking in an additional $30 million in 2014, the Clinton Foundation spent 40 percent less on charitable grants in 2014 than in 2013. Even as it slashed charitable spending, the foundation increased the amount spent on salaries, employee benefits and ",
+    "label": 1,
+    "ground_truth": "Fake",
+    "char_length": 2502
+  }
+]

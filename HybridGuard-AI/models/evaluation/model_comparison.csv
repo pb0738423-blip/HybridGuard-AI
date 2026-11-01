@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1,macro_f1,roc_auc,brier_score,log_loss,ece,latency_mean_ms,latency_median_ms,latency_p95_ms,true_negatives,false_positives,false_negatives,true_positives
+logistic_regression,0.9584,0.9579,0.95,0.9539,0.958,0.9926,0.0421,0.173,0.087,1.461,1.412,2.386,1980,71,85,1614
+linear_svm,0.9696,0.9687,0.9641,0.9664,0.9693,0.9958,0.023,0.0818,0.0082,14.678,14.434,20.416,1998,53,61,1638
+multinomial_nb,0.8768,0.8461,0.8899,0.8675,0.8762,0.9491,0.0894,0.309,0.0402,2.651,2.505,4.077,1776,275,187,1512
+hybrid_stacking,0.9691,0.9686,0.9629,0.9658,0.9688,0.9953,0.0241,0.0906,0.0083,20.385,20.418,28.559,1998,53,63,1636

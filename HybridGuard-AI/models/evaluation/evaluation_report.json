@@ -1,0 +1,1922 @@
+{
+  "logistic_regression": {
+    "model_name": "logistic_regression",
+    "test_sample_count": 3750,
+    "metrics": {
+      "accuracy": 0.9584,
+      "precision": 0.9579,
+      "recall": 0.95,
+      "f1": 0.9539,
+      "macro_f1": 0.958,
+      "roc_auc": 0.9926,
+      "brier_score": 0.0421,
+      "log_loss": 0.173,
+      "ece": 0.087
+    },
+    "latency": {
+      "mean_ms": 1.461,
+      "median_ms": 1.412,
+      "p95_ms": 2.386
+    },
+    "confusion_matrix": {
+      "true_negatives": 1980,
+      "false_positives": 71,
+      "false_negatives": 85,
+      "true_positives": 1614
+    },
+    "calibration_curve": [
+      {
+        "bin_index": 0,
+        "bin_range": "0.0-0.1",
+        "bin_center": 0.05,
+        "count": 1257,
+        "accuracy": 0.9976,
+        "confidence": 0.9519,
+        "gap": 0.0458
+      },
+      {
+        "bin_index": 1,
+        "bin_range": "0.1-0.2",
+        "bin_center": 0.15,
+        "count": 413,
+        "accuracy": 0.9831,
+        "confidence": 0.8589,
+        "gap": 0.1241
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "0.2-0.3",
+        "bin_center": 0.25,
+        "count": 184,
+        "accuracy": 0.9348,
+        "confidence": 0.7571,
+        "gap": 0.1777
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "0.3-0.4",
+        "bin_center": 0.35,
+        "count": 104,
+        "accuracy": 0.7885,
+        "confidence": 0.6494,
+        "gap": 0.139
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "0.4-0.5",
+        "bin_center": 0.45,
+        "count": 107,
+        "accuracy": 0.6168,
+        "confidence": 0.5523,
+        "gap": 0.0646
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "0.5-0.6",
+        "bin_center": 0.55,
+        "count": 106,
+        "accuracy": 0.7075,
+        "confidence": 0.5494,
+        "gap": 0.1582
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "0.6-0.7",
+        "bin_center": 0.65,
+        "count": 135,
+        "accuracy": 0.8148,
+        "confidence": 0.6518,
+        "gap": 0.163
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "0.7-0.8",
+        "bin_center": 0.75,
+        "count": 190,
+        "accuracy": 0.9368,
+        "confidence": 0.751,
+        "gap": 0.1858
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "0.8-0.9",
+        "bin_center": 0.85,
+        "count": 363,
+        "accuracy": 0.9917,
+        "confidence": 0.8592,
+        "gap": 0.1325
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "0.9-1.0",
+        "bin_center": 0.95,
+        "count": 891,
+        "accuracy": 1.0,
+        "confidence": 0.9538,
+        "gap": 0.0462
+      }
+    ],
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.001,
+        "tpr": 0.7293
+      },
+      {
+        "fpr": 0.0024,
+        "tpr": 0.7858
+      },
+      {
+        "fpr": 0.0044,
+        "tpr": 0.8034
+      },
+      {
+        "fpr": 0.0059,
+        "tpr": 0.834
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.847
+      },
+      {
+        "fpr": 0.0098,
+        "tpr": 0.8617
+      },
+      {
+        "fpr": 0.0112,
+        "tpr": 0.8805
+      },
+      {
+        "fpr": 0.0132,
+        "tpr": 0.8893
+      },
+      {
+        "fpr": 0.0151,
+        "tpr": 0.8958
+      },
+      {
+        "fpr": 0.0176,
+        "tpr": 0.9011
+      },
+      {
+        "fpr": 0.0195,
+        "tpr": 0.9035
+      },
+      {
+        "fpr": 0.0215,
+        "tpr": 0.9276
+      },
+      {
+        "fpr": 0.0263,
+        "tpr": 0.9323
+      },
+      {
+        "fpr": 0.0283,
+        "tpr": 0.937
+      },
+      {
+        "fpr": 0.0307,
+        "tpr": 0.947
+      },
+      {
+        "fpr": 0.0375,
+        "tpr": 0.9511
+      },
+      {
+        "fpr": 0.0405,
+        "tpr": 0.9541
+      },
+      {
+        "fpr": 0.0434,
+        "tpr": 0.957
+      },
+      {
+        "fpr": 0.0453,
+        "tpr": 0.96
+      },
+      {
+        "fpr": 0.0517,
+        "tpr": 0.9647
+      },
+      {
+        "fpr": 0.06,
+        "tpr": 0.9682
+      },
+      {
+        "fpr": 0.0624,
+        "tpr": 0.9729
+      },
+      {
+        "fpr": 0.0707,
+        "tpr": 0.9759
+      },
+      {
+        "fpr": 0.078,
+        "tpr": 0.9782
+      },
+      {
+        "fpr": 0.0829,
+        "tpr": 0.9812
+      },
+      {
+        "fpr": 0.0878,
+        "tpr": 0.9829
+      },
+      {
+        "fpr": 0.0917,
+        "tpr": 0.9853
+      },
+      {
+        "fpr": 0.1073,
+        "tpr": 0.9871
+      },
+      {
+        "fpr": 0.1126,
+        "tpr": 0.9894
+      },
+      {
+        "fpr": 0.1312,
+        "tpr": 0.9918
+      },
+      {
+        "fpr": 0.1672,
+        "tpr": 0.9935
+      },
+      {
+        "fpr": 0.2521,
+        "tpr": 0.9959
+      },
+      {
+        "fpr": 0.3837,
+        "tpr": 0.9976
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "pr_curve": [
+      {
+        "recall": 1.0,
+        "precision": 0.4531
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4668
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4813
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4968
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5134
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5311
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.55
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5703
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5924
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.6157
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.6412
+      },
+      {
+        "recall": 0.9988,
+        "precision": 0.6686
+      },
+      {
+        "recall": 0.9971,
+        "precision": 0.698
+      },
+      {
+        "recall": 0.9965,
+        "precision": 0.7307
+      },
+      {
+        "recall": 0.9953,
+        "precision": 0.7662
+      },
+      {
+        "recall": 0.9953,
+        "precision": 0.8064
+      },
+      {
+        "recall": 0.9923,
+        "precision": 0.8489
+      },
+      {
+        "recall": 0.9859,
+        "precision": 0.8929
+      },
+      {
+        "recall": 0.9676,
+        "precision": 0.9309
+      },
+      {
+        "recall": 0.9382,
+        "precision": 0.9631
+      },
+      {
+        "recall": 0.8923,
+        "precision": 0.9812
+      },
+      {
+        "recall": 0.837,
+        "precision": 0.9909
+      },
+      {
+        "recall": 0.7775,
+        "precision": 0.997
+      },
+      {
+        "recall": 0.7139,
+        "precision": 0.9992
+      },
+      {
+        "recall": 0.6492,
+        "precision": 0.9991
+      },
+      {
+        "recall": 0.5851,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5197,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4544,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3896,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3249,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2602,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1948,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1301,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0653,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0,
+        "precision": 1.0
+      }
+    ],
+    "error_analysis": {
+      "false_positives": [
+        {
+          "index": 58,
+          "title": "Ann Coulter: We Have Now Hit Full-On Crazy",
+          "snippet": "Liberals are ecstatic that a judge in Hawaii is writing immigration policy for the entire country, and that policy is: We have no right to tell anyone that he can\u2019t live in America. (Unless they\u2019re Christians  \u2014   those guys we can keep out. )[As subtly alluded to in the subtitle of Adios, America: The Left\u2019s Plan to Turn Our Country into a Third World Hellhole, the goal of liberals is for the poo...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.7586,
+          "p_real": 0.2414
+        },
+        {
+          "index": 72,
+          "title": "EXCLUSIVE: Undercover Audio Reveals Protesters\u2019 Plans to Shut Down Trump\u2019s Inaugural Parade",
+          "snippet": "WASHINGTON, D. C.  \u2014   Breitbart News was able to infiltrate a key planning meeting for the effort of radical groups to not only protest the inauguration of President Trump, but also to \u201cshut it down\u201d and disrupt the historic event. Exclusive, undercover audio reveals the radical coalition will throw everything they have at \u201cshutting down\u201d the Trump Inaugural Parade that spans from the U. S. Capit...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.6101,
+          "p_real": 0.3899
+        },
+        {
+          "index": 82,
+          "title": "Immigration Puzzle Confounds Republican 2016 Field",
+          "snippet": "Republicans are girding for a 2016 campaign debate with Democrats on immigration, but their presidential candidates are still unsure of the best way to handle an issue that could make or break their party\u2019s ability to win back the White House.\n\nMany of the contenders are equivocating or openly shifting their positions on the central question of how to handle the millions of people who are in the U...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.5685,
+          "p_real": 0.4315
+        },
+        {
+          "index": 118,
+          "title": "Schools Asked To \u2019Show Sensitivity\u2019 To Muslims By Adapting Classes Around Ramadan",
+          "snippet": "The Association of School and College Leaders (ASCL) has published a pamphlet asking educators to \u201cshow sensitivity\u201d to Muslims during the month of Ramadan as GCSE and   exams approach. [The body, which represents some 18, 000 headteachers and college leaders, according to the MailOnline, recommends schools reschedule revision classes and redesign physical education lesson plans in order to take t...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.652,
+          "p_real": 0.348
+        }
+      ],
+      "false_negatives": [
+        {
+          "index": 76,
+          "title": "Kerry: We Have To Worry About Treatment of Transgender People Globally",
+          "snippet": "On Sunday, Secretary of State John Kerry marked \u201cTransgender Day of Remembrance\u201d with a released statement on the State Department website, imploring the United States to focus on the treatment of transgender people...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.3569,
+          "p_real": 0.6431
+        },
+        {
+          "index": 224,
+          "title": "Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials",
+          "snippet": "Videos Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials Big-money corporate lobbying has reached into one of the most obscure corners of state government: the offices of secretaries of state, the people charged with running elections impartially.   Barbara Cegavske, the Nevada secretary of state, during a debate .The Republican Secretaries of State Committee, a fundraising group, in...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.0867,
+          "p_real": 0.9133
+        },
+        {
+          "index": 339,
+          "title": "BREAKING: IRAN REJECTED U.S. NUKE DEAL As They\u2019re About To Receive Over $10 Billion In Unfrozen Assets",
+          "snippet": "Say what?The Iranian parliament has rejected the formal, legal text of President Barack Obama s nuclear deal, negotiated in July by the U.S., U.K., France, Germany, Russia, China and the Tehran regime.Instead, the majilis approved their own version of the Joint Comprehensive Plan of Action (JCPOA), creating a situation where the Iranian government simply hasn t signed on to the accord that Obama a...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.4231,
+          "p_real": 0.5769
+        },
+        {
+          "index": 394,
+          "title": "Protest by \u2018equal rights for immigrants\u2019 group blocking George Washington Bridge, major delays",
+          "snippet": "Print \nProtesters blocked the upper level of the George Washington Bridge into New York City during the busy Wednesday morning rush hour, causing extensive delays in both directions of the span. \nThe upper level eastbound lane was closed for 15 minutes as police arrested 10 protesters around 8:15 a.m., officials said. Delays continued to build on the George Washington Bridge as a result. \nMotorist...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.2879,
+          "p_real": 0.7121
+        }
+      ]
+    }
+  },
+  "linear_svm": {
+    "model_name": "linear_svm",
+    "test_sample_count": 3750,
+    "metrics": {
+      "accuracy": 0.9696,
+      "precision": 0.9687,
+      "recall": 0.9641,
+      "f1": 0.9664,
+      "macro_f1": 0.9693,
+      "roc_auc": 0.9958,
+      "brier_score": 0.023,
+      "log_loss": 0.0818,
+      "ece": 0.0082
+    },
+    "latency": {
+      "mean_ms": 14.678,
+      "median_ms": 14.434,
+      "p95_ms": 20.416
+    },
+    "confusion_matrix": {
+      "true_negatives": 1998,
+      "false_positives": 53,
+      "false_negatives": 61,
+      "true_positives": 1638
+    },
+    "calibration_curve": [
+      {
+        "bin_index": 0,
+        "bin_range": "0.0-0.1",
+        "bin_center": 0.05,
+        "count": 1857,
+        "accuracy": 0.9935,
+        "confidence": 0.9904,
+        "gap": 0.0031
+      },
+      {
+        "bin_index": 1,
+        "bin_range": "0.1-0.2",
+        "bin_center": 0.15,
+        "count": 90,
+        "accuracy": 0.8778,
+        "confidence": 0.8532,
+        "gap": 0.0246
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "0.2-0.3",
+        "bin_center": 0.25,
+        "count": 40,
+        "accuracy": 0.8,
+        "confidence": 0.7467,
+        "gap": 0.0533
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "0.3-0.4",
+        "bin_center": 0.35,
+        "count": 31,
+        "accuracy": 0.6452,
+        "confidence": 0.6478,
+        "gap": 0.0026
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "0.4-0.5",
+        "bin_center": 0.45,
+        "count": 41,
+        "accuracy": 0.5366,
+        "confidence": 0.5507,
+        "gap": 0.0141
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "0.5-0.6",
+        "bin_center": 0.55,
+        "count": 32,
+        "accuracy": 0.625,
+        "confidence": 0.5486,
+        "gap": 0.0764
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "0.6-0.7",
+        "bin_center": 0.65,
+        "count": 43,
+        "accuracy": 0.7209,
+        "confidence": 0.6457,
+        "gap": 0.0753
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "0.7-0.8",
+        "bin_center": 0.75,
+        "count": 47,
+        "accuracy": 0.7234,
+        "confidence": 0.7533,
+        "gap": 0.0299
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "0.8-0.9",
+        "bin_center": 0.85,
+        "count": 90,
+        "accuracy": 0.9222,
+        "confidence": 0.8566,
+        "gap": 0.0657
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "0.9-1.0",
+        "bin_center": 0.95,
+        "count": 1479,
+        "accuracy": 0.9939,
+        "confidence": 0.9893,
+        "gap": 0.0046
+      }
+    ],
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0005,
+        "tpr": 0.7269
+      },
+      {
+        "fpr": 0.0015,
+        "tpr": 0.8364
+      },
+      {
+        "fpr": 0.0034,
+        "tpr": 0.8476
+      },
+      {
+        "fpr": 0.0049,
+        "tpr": 0.8729
+      },
+      {
+        "fpr": 0.0059,
+        "tpr": 0.8958
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.917
+      },
+      {
+        "fpr": 0.0098,
+        "tpr": 0.9205
+      },
+      {
+        "fpr": 0.0112,
+        "tpr": 0.9258
+      },
+      {
+        "fpr": 0.0122,
+        "tpr": 0.9305
+      },
+      {
+        "fpr": 0.0141,
+        "tpr": 0.9341
+      },
+      {
+        "fpr": 0.0156,
+        "tpr": 0.9382
+      },
+      {
+        "fpr": 0.0166,
+        "tpr": 0.9441
+      },
+      {
+        "fpr": 0.0185,
+        "tpr": 0.9488
+      },
+      {
+        "fpr": 0.0205,
+        "tpr": 0.9547
+      },
+      {
+        "fpr": 0.0215,
+        "tpr": 0.9576
+      },
+      {
+        "fpr": 0.0239,
+        "tpr": 0.9617
+      },
+      {
+        "fpr": 0.0254,
+        "tpr": 0.9629
+      },
+      {
+        "fpr": 0.0278,
+        "tpr": 0.9688
+      },
+      {
+        "fpr": 0.0317,
+        "tpr": 0.9717
+      },
+      {
+        "fpr": 0.0351,
+        "tpr": 0.9729
+      },
+      {
+        "fpr": 0.04,
+        "tpr": 0.9759
+      },
+      {
+        "fpr": 0.041,
+        "tpr": 0.9782
+      },
+      {
+        "fpr": 0.0444,
+        "tpr": 0.9794
+      },
+      {
+        "fpr": 0.0507,
+        "tpr": 0.9823
+      },
+      {
+        "fpr": 0.0527,
+        "tpr": 0.9841
+      },
+      {
+        "fpr": 0.0575,
+        "tpr": 0.9859
+      },
+      {
+        "fpr": 0.0678,
+        "tpr": 0.9888
+      },
+      {
+        "fpr": 0.0726,
+        "tpr": 0.9906
+      },
+      {
+        "fpr": 0.0965,
+        "tpr": 0.9923
+      },
+      {
+        "fpr": 0.1214,
+        "tpr": 0.9935
+      },
+      {
+        "fpr": 0.1653,
+        "tpr": 0.9953
+      },
+      {
+        "fpr": 0.2448,
+        "tpr": 0.9971
+      },
+      {
+        "fpr": 0.312,
+        "tpr": 0.9982
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "pr_curve": [
+      {
+        "recall": 1.0,
+        "precision": 0.4531
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4668
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4813
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4968
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5134
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5311
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.55
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5703
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5924
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.616
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.6416
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.669
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.6996
+      },
+      {
+        "recall": 0.9982,
+        "precision": 0.732
+      },
+      {
+        "recall": 0.9971,
+        "precision": 0.7676
+      },
+      {
+        "recall": 0.9965,
+        "precision": 0.8073
+      },
+      {
+        "recall": 0.9947,
+        "precision": 0.851
+      },
+      {
+        "recall": 0.9918,
+        "precision": 0.8982
+      },
+      {
+        "recall": 0.9823,
+        "precision": 0.9451
+      },
+      {
+        "recall": 0.9506,
+        "precision": 0.9758
+      },
+      {
+        "recall": 0.9017,
+        "precision": 0.9916
+      },
+      {
+        "recall": 0.8417,
+        "precision": 0.9965
+      },
+      {
+        "recall": 0.7793,
+        "precision": 0.9992
+      },
+      {
+        "recall": 0.7145,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.6498,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5845,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5197,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4544,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3896,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3249,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2602,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1948,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1301,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0653,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0,
+        "precision": 1.0
+      }
+    ],
+    "error_analysis": {
+      "false_positives": [
+        {
+          "index": 58,
+          "title": "Ann Coulter: We Have Now Hit Full-On Crazy",
+          "snippet": "Liberals are ecstatic that a judge in Hawaii is writing immigration policy for the entire country, and that policy is: We have no right to tell anyone that he can\u2019t live in America. (Unless they\u2019re Christians  \u2014   those guys we can keep out. )[As subtly alluded to in the subtitle of Adios, America: The Left\u2019s Plan to Turn Our Country into a Third World Hellhole, the goal of liberals is for the poo...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.9495,
+          "p_real": 0.0505
+        },
+        {
+          "index": 72,
+          "title": "EXCLUSIVE: Undercover Audio Reveals Protesters\u2019 Plans to Shut Down Trump\u2019s Inaugural Parade",
+          "snippet": "WASHINGTON, D. C.  \u2014   Breitbart News was able to infiltrate a key planning meeting for the effort of radical groups to not only protest the inauguration of President Trump, but also to \u201cshut it down\u201d and disrupt the historic event. Exclusive, undercover audio reveals the radical coalition will throw everything they have at \u201cshutting down\u201d the Trump Inaugural Parade that spans from the U. S. Capit...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.9024,
+          "p_real": 0.0976
+        },
+        {
+          "index": 118,
+          "title": "Schools Asked To \u2019Show Sensitivity\u2019 To Muslims By Adapting Classes Around Ramadan",
+          "snippet": "The Association of School and College Leaders (ASCL) has published a pamphlet asking educators to \u201cshow sensitivity\u201d to Muslims during the month of Ramadan as GCSE and   exams approach. [The body, which represents some 18, 000 headteachers and college leaders, according to the MailOnline, recommends schools reschedule revision classes and redesign physical education lesson plans in order to take t...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.8223,
+          "p_real": 0.1777
+        },
+        {
+          "index": 190,
+          "title": "Russian Legislator: Russia Would Use Nuclear Weapons on U.S. or NATO in Eastern Ukraine",
+          "snippet": "Speaking at a security forum in Slovakia on Sunday, a member of the Russian parliament suggested his country\u2019s military would resort to nuclear weapons to repel a U. S. or NATO incursion into Crimea or eastern Ukraine. [\u201cOn the issue of NATO expansion on our borders, at some point I heard from the Russian military  \u2014   and I think they are right  \u2014   if U. S. forces, NATO forces, are, were, in the...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.646,
+          "p_real": 0.354
+        }
+      ],
+      "false_negatives": [
+        {
+          "index": 76,
+          "title": "Kerry: We Have To Worry About Treatment of Transgender People Globally",
+          "snippet": "On Sunday, Secretary of State John Kerry marked \u201cTransgender Day of Remembrance\u201d with a released statement on the State Department website, imploring the United States to focus on the treatment of transgender people...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.1049,
+          "p_real": 0.8951
+        },
+        {
+          "index": 224,
+          "title": "Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials",
+          "snippet": "Videos Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials Big-money corporate lobbying has reached into one of the most obscure corners of state government: the offices of secretaries of state, the people charged with running elections impartially.   Barbara Cegavske, the Nevada secretary of state, during a debate .The Republican Secretaries of State Committee, a fundraising group, in...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.0147,
+          "p_real": 0.9853
+        },
+        {
+          "index": 394,
+          "title": "Protest by \u2018equal rights for immigrants\u2019 group blocking George Washington Bridge, major delays",
+          "snippet": "Print \nProtesters blocked the upper level of the George Washington Bridge into New York City during the busy Wednesday morning rush hour, causing extensive delays in both directions of the span. \nThe upper level eastbound lane was closed for 15 minutes as police arrested 10 protesters around 8:15 a.m., officials said. Delays continued to build on the George Washington Bridge as a result. \nMotorist...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.1819,
+          "p_real": 0.8181
+        },
+        {
+          "index": 416,
+          "title": "Trump Opens New Hotel in DC on Time and Under Budget\u2026 Shows How Outsiders Get Things Done in DC",
+          "snippet": "White House Says Obamacare Premiums to Rise 22% in 2017 \nIn all likelihood, the Democrats and media in the D.C. establishment are furious about Trump\u2019s new hotel because it serves as a nightmarish reminder of the utter failure of a job they have done in the nation\u2019s capital. \nIn stark contrast to how things typically proceed in the corrupt swamp known as D.C., Trump\u2019s hotel was completed \u201cunder bu...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.4382,
+          "p_real": 0.5618
+        }
+      ]
+    }
+  },
+  "multinomial_nb": {
+    "model_name": "multinomial_nb",
+    "test_sample_count": 3750,
+    "metrics": {
+      "accuracy": 0.8768,
+      "precision": 0.8461,
+      "recall": 0.8899,
+      "f1": 0.8675,
+      "macro_f1": 0.8762,
+      "roc_auc": 0.9491,
+      "brier_score": 0.0894,
+      "log_loss": 0.309,
+      "ece": 0.0402
+    },
+    "latency": {
+      "mean_ms": 2.651,
+      "median_ms": 2.505,
+      "p95_ms": 4.077
+    },
+    "confusion_matrix": {
+      "true_negatives": 1776,
+      "false_positives": 275,
+      "false_negatives": 187,
+      "true_positives": 1512
+    },
+    "calibration_curve": [
+      {
+        "bin_index": 0,
+        "bin_range": "0.0-0.1",
+        "bin_center": 0.05,
+        "count": 1541,
+        "accuracy": 0.9669,
+        "confidence": 0.9853,
+        "gap": 0.0184
+      },
+      {
+        "bin_index": 1,
+        "bin_range": "0.1-0.2",
+        "bin_center": 0.15,
+        "count": 159,
+        "accuracy": 0.7862,
+        "confidence": 0.855,
+        "gap": 0.0688
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "0.2-0.3",
+        "bin_center": 0.25,
+        "count": 88,
+        "accuracy": 0.7159,
+        "confidence": 0.7501,
+        "gap": 0.0342
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "0.3-0.4",
+        "bin_center": 0.35,
+        "count": 88,
+        "accuracy": 0.6477,
+        "confidence": 0.6455,
+        "gap": 0.0022
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "0.4-0.5",
+        "bin_center": 0.45,
+        "count": 87,
+        "accuracy": 0.4713,
+        "confidence": 0.5467,
+        "gap": 0.0755
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "0.5-0.6",
+        "bin_center": 0.55,
+        "count": 108,
+        "accuracy": 0.4815,
+        "confidence": 0.5448,
+        "gap": 0.0633
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "0.6-0.7",
+        "bin_center": 0.65,
+        "count": 111,
+        "accuracy": 0.6036,
+        "confidence": 0.6524,
+        "gap": 0.0488
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "0.7-0.8",
+        "bin_center": 0.75,
+        "count": 135,
+        "accuracy": 0.6741,
+        "confidence": 0.7558,
+        "gap": 0.0817
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "0.8-0.9",
+        "bin_center": 0.85,
+        "count": 192,
+        "accuracy": 0.75,
+        "confidence": 0.8578,
+        "gap": 0.1078
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "0.9-1.0",
+        "bin_center": 0.95,
+        "count": 1241,
+        "accuracy": 0.9331,
+        "confidence": 0.9795,
+        "gap": 0.0464
+      }
+    ],
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0044,
+        "tpr": 0.2466
+      },
+      {
+        "fpr": 0.0088,
+        "tpr": 0.3843
+      },
+      {
+        "fpr": 0.0141,
+        "tpr": 0.4297
+      },
+      {
+        "fpr": 0.019,
+        "tpr": 0.4991
+      },
+      {
+        "fpr": 0.0239,
+        "tpr": 0.5527
+      },
+      {
+        "fpr": 0.0293,
+        "tpr": 0.6109
+      },
+      {
+        "fpr": 0.0346,
+        "tpr": 0.6474
+      },
+      {
+        "fpr": 0.041,
+        "tpr": 0.6875
+      },
+      {
+        "fpr": 0.0463,
+        "tpr": 0.7016
+      },
+      {
+        "fpr": 0.0522,
+        "tpr": 0.7222
+      },
+      {
+        "fpr": 0.0595,
+        "tpr": 0.7516
+      },
+      {
+        "fpr": 0.0648,
+        "tpr": 0.7716
+      },
+      {
+        "fpr": 0.0712,
+        "tpr": 0.7887
+      },
+      {
+        "fpr": 0.079,
+        "tpr": 0.8028
+      },
+      {
+        "fpr": 0.0839,
+        "tpr": 0.8175
+      },
+      {
+        "fpr": 0.0926,
+        "tpr": 0.8352
+      },
+      {
+        "fpr": 0.1014,
+        "tpr": 0.8546
+      },
+      {
+        "fpr": 0.1126,
+        "tpr": 0.8717
+      },
+      {
+        "fpr": 0.1263,
+        "tpr": 0.8829
+      },
+      {
+        "fpr": 0.1365,
+        "tpr": 0.8964
+      },
+      {
+        "fpr": 0.1463,
+        "tpr": 0.907
+      },
+      {
+        "fpr": 0.157,
+        "tpr": 0.9176
+      },
+      {
+        "fpr": 0.1716,
+        "tpr": 0.9276
+      },
+      {
+        "fpr": 0.1814,
+        "tpr": 0.9353
+      },
+      {
+        "fpr": 0.1926,
+        "tpr": 0.9417
+      },
+      {
+        "fpr": 0.2067,
+        "tpr": 0.9488
+      },
+      {
+        "fpr": 0.2214,
+        "tpr": 0.9547
+      },
+      {
+        "fpr": 0.2379,
+        "tpr": 0.9623
+      },
+      {
+        "fpr": 0.2686,
+        "tpr": 0.9694
+      },
+      {
+        "fpr": 0.3062,
+        "tpr": 0.977
+      },
+      {
+        "fpr": 0.3671,
+        "tpr": 0.9823
+      },
+      {
+        "fpr": 0.4183,
+        "tpr": 0.9882
+      },
+      {
+        "fpr": 0.5095,
+        "tpr": 0.9935
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "pr_curve": [
+      {
+        "recall": 1.0,
+        "precision": 0.4531
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4668
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4813
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4968
+      },
+      {
+        "recall": 0.9988,
+        "precision": 0.5128
+      },
+      {
+        "recall": 0.9976,
+        "precision": 0.5299
+      },
+      {
+        "recall": 0.9976,
+        "precision": 0.5487
+      },
+      {
+        "recall": 0.9959,
+        "precision": 0.568
+      },
+      {
+        "recall": 0.9947,
+        "precision": 0.5893
+      },
+      {
+        "recall": 0.9947,
+        "precision": 0.6128
+      },
+      {
+        "recall": 0.9912,
+        "precision": 0.636
+      },
+      {
+        "recall": 0.9882,
+        "precision": 0.6615
+      },
+      {
+        "recall": 0.9829,
+        "precision": 0.6881
+      },
+      {
+        "recall": 0.977,
+        "precision": 0.7164
+      },
+      {
+        "recall": 0.97,
+        "precision": 0.7467
+      },
+      {
+        "recall": 0.9582,
+        "precision": 0.7763
+      },
+      {
+        "recall": 0.94,
+        "precision": 0.8041
+      },
+      {
+        "recall": 0.917,
+        "precision": 0.8305
+      },
+      {
+        "recall": 0.8846,
+        "precision": 0.8516
+      },
+      {
+        "recall": 0.854,
+        "precision": 0.8773
+      },
+      {
+        "recall": 0.8105,
+        "precision": 0.8918
+      },
+      {
+        "recall": 0.7669,
+        "precision": 0.9086
+      },
+      {
+        "recall": 0.7163,
+        "precision": 0.9192
+      },
+      {
+        "recall": 0.6698,
+        "precision": 0.9382
+      },
+      {
+        "recall": 0.6127,
+        "precision": 0.9438
+      },
+      {
+        "recall": 0.5556,
+        "precision": 0.9507
+      },
+      {
+        "recall": 0.4968,
+        "precision": 0.9558
+      },
+      {
+        "recall": 0.4373,
+        "precision": 0.9624
+      },
+      {
+        "recall": 0.3796,
+        "precision": 0.9743
+      },
+      {
+        "recall": 0.3184,
+        "precision": 0.9801
+      },
+      {
+        "recall": 0.2549,
+        "precision": 0.9796
+      },
+      {
+        "recall": 0.1913,
+        "precision": 0.9819
+      },
+      {
+        "recall": 0.1283,
+        "precision": 0.9864
+      },
+      {
+        "recall": 0.0647,
+        "precision": 0.991
+      },
+      {
+        "recall": 0.0,
+        "precision": 1.0
+      }
+    ],
+    "error_analysis": {
+      "false_positives": [
+        {
+          "index": 33,
+          "title": "Paul: If GOP Doesn\u2019t Replace Obamacare \u2019Within Months,\u2019 Insurance Companies Will Go Bankrupt - Breitbart",
+          "snippet": "Wednesday on Fox News Channel\u2019s \u201cAmerica\u2019s News HQ,\u201d Sen. Rand Paul ( ) said while he supports repealing the Affordable Care Act, it must be replaced immediately or \u201cwithin months of repealing it, you will lead to further bankruptcies in the insurance industry. \u201d  Paul said, \u201cWell here\u2019s the interesting thing about Obamacare, they wanted to provide insurance for everybody, even if you were already...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.5017,
+          "p_real": 0.4983
+        },
+        {
+          "index": 57,
+          "title": "Donald Trump doesn't challenge anti-Muslim questioner",
+          "snippet": "Trump, who has shaken off several high-profile controversies that would have ended other presidential campaigns, faced an immediate backlash from advocacy groups, and members of his own party distanced themselves from the GOP front-runner. The incident recalls Trump's 2011 quest to challenge Obama on where he was born, which ended with Obama releasing his long-form birth certificate. It also follo...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.8237,
+          "p_real": 0.1763
+        },
+        {
+          "index": 58,
+          "title": "Ann Coulter: We Have Now Hit Full-On Crazy",
+          "snippet": "Liberals are ecstatic that a judge in Hawaii is writing immigration policy for the entire country, and that policy is: We have no right to tell anyone that he can\u2019t live in America. (Unless they\u2019re Christians  \u2014   those guys we can keep out. )[As subtly alluded to in the subtitle of Adios, America: The Left\u2019s Plan to Turn Our Country into a Third World Hellhole, the goal of liberals is for the poo...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.8752,
+          "p_real": 0.1248
+        },
+        {
+          "index": 60,
+          "title": "Obama passes baton to Clinton, stirs up '3rd term' charges",
+          "snippet": "President Obama invoked his\u00a0\u201cYes we can\u201d\u00a02008 campaign slogan\u00a0Wednesday\u00a0night at the Democratic National Convention, leaving little doubt that his declaration that Hillary Clinton was\u00a0\u201cfit\u201d\u00a0and\u00a0\u201cready\u201d\u00a0to be commander-in-chief was a\u00a0baton-passing of his eight years in office\u00a0\u2014 a legacy that Republican nominee Donald Trump immediately attacked as \u201cOwning the 3rd Term.\u201d\n\nCapping another night of Tru...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.7804,
+          "p_real": 0.2196
+        }
+      ],
+      "false_negatives": [
+        {
+          "index": 12,
+          "title": "Central Bank sees Russia\u2019s moving up in Doing Business rating as good sign",
+          "snippet": "Central Bank sees Russia\u2019s moving up in Doing Business rating as good sign October 27, 2016 TASS Doing business in Russia , banks , ranking Russia moved up to the 40th position in the Doing Business-2017 rating. Source: Getty Images \nThe Central Bank sees Russia\u2019s moving up in the Doing Business rating as a good sign, Deputy CEO of the Central Bank Vladimir Chistyukhin told reporters. \n\"That is a ...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.3605,
+          "p_real": 0.6395
+        },
+        {
+          "index": 24,
+          "title": "US-Saudi Plan: Let 9,000 ISIS Fighters Walk Free from Mosul \u2013 to Fight in Syria",
+          "snippet": "Patrick Henningsen 21st Century WireJudging by both the words, and deeds of the Obama White House and its political  diplomatic  appointees led by perfidious John Kerry and caustic Samantha Power   all evidence to date points to the US wanting to escalate its war on Syria   while happily baiting a military confrontation, and World War  scenario with Russia and its allies in the process. If this la...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.4949,
+          "p_real": 0.5051
+        },
+        {
+          "index": 76,
+          "title": "Kerry: We Have To Worry About Treatment of Transgender People Globally",
+          "snippet": "On Sunday, Secretary of State John Kerry marked \u201cTransgender Day of Remembrance\u201d with a released statement on the State Department website, imploring the United States to focus on the treatment of transgender people...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.1812,
+          "p_real": 0.8188
+        },
+        {
+          "index": 93,
+          "title": "HUNGARY\u2019S BADASS PRIME MINISTER Responds To Threats From EU\u2026And His Response Is Making Everyone Want To Stand Up And Cheer! [VIDEO]",
+          "snippet": "German Social Democrat leader Martin Schulz said that, if elected chancellor, he would push for the EU to cut subsidies to countries that do not take in refugees. With me as chancellor   we won t accept that solidarity as a principle is questioned,  Schulz said on Tuesday at a conference of a business lobbying group with ties to his party.On Monday, Orb n told the Hungarian parliament that his cou...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.1626,
+          "p_real": 0.8374
+        }
+      ]
+    }
+  },
+  "hybrid_stacking": {
+    "model_name": "hybrid_stacking",
+    "test_sample_count": 3750,
+    "metrics": {
+      "accuracy": 0.9691,
+      "precision": 0.9686,
+      "recall": 0.9629,
+      "f1": 0.9658,
+      "macro_f1": 0.9688,
+      "roc_auc": 0.9953,
+      "brier_score": 0.0241,
+      "log_loss": 0.0906,
+      "ece": 0.0083
+    },
+    "latency": {
+      "mean_ms": 20.385,
+      "median_ms": 20.418,
+      "p95_ms": 28.559
+    },
+    "confusion_matrix": {
+      "true_negatives": 1998,
+      "false_positives": 53,
+      "false_negatives": 63,
+      "true_positives": 1636
+    },
+    "calibration_curve": [
+      {
+        "bin_index": 0,
+        "bin_range": "0.0-0.1",
+        "bin_center": 0.05,
+        "count": 1955,
+        "accuracy": 0.9877,
+        "confidence": 0.9857,
+        "gap": 0.002
+      },
+      {
+        "bin_index": 1,
+        "bin_range": "0.1-0.2",
+        "bin_center": 0.15,
+        "count": 46,
+        "accuracy": 0.7174,
+        "confidence": 0.855,
+        "gap": 0.1376
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "0.2-0.3",
+        "bin_center": 0.25,
+        "count": 18,
+        "accuracy": 0.6111,
+        "confidence": 0.7443,
+        "gap": 0.1332
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "0.3-0.4",
+        "bin_center": 0.35,
+        "count": 23,
+        "accuracy": 0.5652,
+        "confidence": 0.6483,
+        "gap": 0.0831
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "0.4-0.5",
+        "bin_center": 0.45,
+        "count": 19,
+        "accuracy": 0.5263,
+        "confidence": 0.5529,
+        "gap": 0.0266
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "0.5-0.6",
+        "bin_center": 0.55,
+        "count": 18,
+        "accuracy": 0.5,
+        "confidence": 0.5526,
+        "gap": 0.0526
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "0.6-0.7",
+        "bin_center": 0.65,
+        "count": 17,
+        "accuracy": 0.8235,
+        "confidence": 0.6478,
+        "gap": 0.1757
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "0.7-0.8",
+        "bin_center": 0.75,
+        "count": 33,
+        "accuracy": 0.697,
+        "confidence": 0.7529,
+        "gap": 0.0559
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "0.8-0.9",
+        "bin_center": 0.85,
+        "count": 42,
+        "accuracy": 0.7381,
+        "confidence": 0.8652,
+        "gap": 0.1271
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "0.9-1.0",
+        "bin_center": 0.95,
+        "count": 1579,
+        "accuracy": 0.9873,
+        "confidence": 0.9843,
+        "gap": 0.003
+      }
+    ],
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0005,
+        "tpr": 0.6875
+      },
+      {
+        "fpr": 0.002,
+        "tpr": 0.8117
+      },
+      {
+        "fpr": 0.0034,
+        "tpr": 0.834
+      },
+      {
+        "fpr": 0.0044,
+        "tpr": 0.8693
+      },
+      {
+        "fpr": 0.0059,
+        "tpr": 0.887
+      },
+      {
+        "fpr": 0.0073,
+        "tpr": 0.8964
+      },
+      {
+        "fpr": 0.0088,
+        "tpr": 0.9147
+      },
+      {
+        "fpr": 0.0102,
+        "tpr": 0.9182
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.927
+      },
+      {
+        "fpr": 0.0132,
+        "tpr": 0.9305
+      },
+      {
+        "fpr": 0.0146,
+        "tpr": 0.9341
+      },
+      {
+        "fpr": 0.0161,
+        "tpr": 0.9417
+      },
+      {
+        "fpr": 0.018,
+        "tpr": 0.9447
+      },
+      {
+        "fpr": 0.0195,
+        "tpr": 0.9476
+      },
+      {
+        "fpr": 0.021,
+        "tpr": 0.9553
+      },
+      {
+        "fpr": 0.0224,
+        "tpr": 0.9582
+      },
+      {
+        "fpr": 0.0244,
+        "tpr": 0.9612
+      },
+      {
+        "fpr": 0.0258,
+        "tpr": 0.9635
+      },
+      {
+        "fpr": 0.0273,
+        "tpr": 0.9665
+      },
+      {
+        "fpr": 0.0332,
+        "tpr": 0.9688
+      },
+      {
+        "fpr": 0.0356,
+        "tpr": 0.9706
+      },
+      {
+        "fpr": 0.0371,
+        "tpr": 0.9741
+      },
+      {
+        "fpr": 0.0405,
+        "tpr": 0.9776
+      },
+      {
+        "fpr": 0.0468,
+        "tpr": 0.9806
+      },
+      {
+        "fpr": 0.0497,
+        "tpr": 0.9818
+      },
+      {
+        "fpr": 0.0517,
+        "tpr": 0.9835
+      },
+      {
+        "fpr": 0.0653,
+        "tpr": 0.9859
+      },
+      {
+        "fpr": 0.0663,
+        "tpr": 0.9876
+      },
+      {
+        "fpr": 0.0717,
+        "tpr": 0.9906
+      },
+      {
+        "fpr": 0.1117,
+        "tpr": 0.9935
+      },
+      {
+        "fpr": 0.1902,
+        "tpr": 0.9947
+      },
+      {
+        "fpr": 0.2999,
+        "tpr": 0.9965
+      },
+      {
+        "fpr": 0.3613,
+        "tpr": 0.9982
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "pr_curve": [
+      {
+        "recall": 1.0,
+        "precision": 0.4531
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4668
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4813
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4968
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5134
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5311
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.55
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.57
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.5921
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.6157
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.6412
+      },
+      {
+        "recall": 0.9994,
+        "precision": 0.669
+      },
+      {
+        "recall": 0.9982,
+        "precision": 0.6988
+      },
+      {
+        "recall": 0.9976,
+        "precision": 0.7315
+      },
+      {
+        "recall": 0.9965,
+        "precision": 0.7671
+      },
+      {
+        "recall": 0.9953,
+        "precision": 0.8064
+      },
+      {
+        "recall": 0.9941,
+        "precision": 0.8505
+      },
+      {
+        "recall": 0.9929,
+        "precision": 0.8993
+      },
+      {
+        "recall": 0.9812,
+        "precision": 0.9439
+      },
+      {
+        "recall": 0.95,
+        "precision": 0.9752
+      },
+      {
+        "recall": 0.8999,
+        "precision": 0.9896
+      },
+      {
+        "recall": 0.8405,
+        "precision": 0.9951
+      },
+      {
+        "recall": 0.7793,
+        "precision": 0.9992
+      },
+      {
+        "recall": 0.7139,
+        "precision": 0.9992
+      },
+      {
+        "recall": 0.6498,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5851,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5203,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.455,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3902,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3255,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2607,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1954,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.1307,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0659,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.0,
+        "precision": 1.0
+      }
+    ],
+    "error_analysis": {
+      "false_positives": [
+        {
+          "index": 58,
+          "title": "Ann Coulter: We Have Now Hit Full-On Crazy",
+          "snippet": "Liberals are ecstatic that a judge in Hawaii is writing immigration policy for the entire country, and that policy is: We have no right to tell anyone that he can\u2019t live in America. (Unless they\u2019re Christians  \u2014   those guys we can keep out. )[As subtly alluded to in the subtitle of Adios, America: The Left\u2019s Plan to Turn Our Country into a Third World Hellhole, the goal of liberals is for the poo...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.976,
+          "p_real": 0.024
+        },
+        {
+          "index": 72,
+          "title": "EXCLUSIVE: Undercover Audio Reveals Protesters\u2019 Plans to Shut Down Trump\u2019s Inaugural Parade",
+          "snippet": "WASHINGTON, D. C.  \u2014   Breitbart News was able to infiltrate a key planning meeting for the effort of radical groups to not only protest the inauguration of President Trump, but also to \u201cshut it down\u201d and disrupt the historic event. Exclusive, undercover audio reveals the radical coalition will throw everything they have at \u201cshutting down\u201d the Trump Inaugural Parade that spans from the U. S. Capit...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.9473,
+          "p_real": 0.0527
+        },
+        {
+          "index": 82,
+          "title": "Immigration Puzzle Confounds Republican 2016 Field",
+          "snippet": "Republicans are girding for a 2016 campaign debate with Democrats on immigration, but their presidential candidates are still unsure of the best way to handle an issue that could make or break their party\u2019s ability to win back the White House.\n\nMany of the contenders are equivocating or openly shifting their positions on the central question of how to handle the millions of people who are in the U...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.5972,
+          "p_real": 0.4028
+        },
+        {
+          "index": 118,
+          "title": "Schools Asked To \u2019Show Sensitivity\u2019 To Muslims By Adapting Classes Around Ramadan",
+          "snippet": "The Association of School and College Leaders (ASCL) has published a pamphlet asking educators to \u201cshow sensitivity\u201d to Muslims during the month of Ramadan as GCSE and   exams approach. [The body, which represents some 18, 000 headteachers and college leaders, according to the MailOnline, recommends schools reschedule revision classes and redesign physical education lesson plans in order to take t...",
+          "true_label": "Real",
+          "pred_label": "Fake",
+          "p_fake": 0.9383,
+          "p_real": 0.0617
+        }
+      ],
+      "false_negatives": [
+        {
+          "index": 76,
+          "title": "Kerry: We Have To Worry About Treatment of Transgender People Globally",
+          "snippet": "On Sunday, Secretary of State John Kerry marked \u201cTransgender Day of Remembrance\u201d with a released statement on the State Department website, imploring the United States to focus on the treatment of transgender people...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.0495,
+          "p_real": 0.9505
+        },
+        {
+          "index": 224,
+          "title": "Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials",
+          "snippet": "Videos Clay Pigeons: How Lobbyists Secretly Woo Top Election Officials Big-money corporate lobbying has reached into one of the most obscure corners of state government: the offices of secretaries of state, the people charged with running elections impartially.   Barbara Cegavske, the Nevada secretary of state, during a debate .The Republican Secretaries of State Committee, a fundraising group, in...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.0128,
+          "p_real": 0.9872
+        },
+        {
+          "index": 394,
+          "title": "Protest by \u2018equal rights for immigrants\u2019 group blocking George Washington Bridge, major delays",
+          "snippet": "Print \nProtesters blocked the upper level of the George Washington Bridge into New York City during the busy Wednesday morning rush hour, causing extensive delays in both directions of the span. \nThe upper level eastbound lane was closed for 15 minutes as police arrested 10 protesters around 8:15 a.m., officials said. Delays continued to build on the George Washington Bridge as a result. \nMotorist...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.0686,
+          "p_real": 0.9314
+        },
+        {
+          "index": 416,
+          "title": "Trump Opens New Hotel in DC on Time and Under Budget\u2026 Shows How Outsiders Get Things Done in DC",
+          "snippet": "White House Says Obamacare Premiums to Rise 22% in 2017 \nIn all likelihood, the Democrats and media in the D.C. establishment are furious about Trump\u2019s new hotel because it serves as a nightmarish reminder of the utter failure of a job they have done in the nation\u2019s capital. \nIn stark contrast to how things typically proceed in the corrupt swamp known as D.C., Trump\u2019s hotel was completed \u201cunder bu...",
+          "true_label": "Fake",
+          "pred_label": "Real",
+          "p_fake": 0.3781,
+          "p_real": 0.6219
+        }
+      ]
+    }
+  }
+}
